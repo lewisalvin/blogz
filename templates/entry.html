@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Build a Blog</h1>
+   
+
+
+
+
+    <hr />
+
+    
+
+        <ul>
+            
+            <a href="/entry?id={{blogs.id}}"><li>{{blogs.title}}</a>   
+            </li>
+            <li> {{blogs.body}}</li>
+            
+            
+        </ul>
+
+    
+    
+{% endblock %}

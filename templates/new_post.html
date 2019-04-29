@@ -1,0 +1,18 @@
+<h1>Build a Blog</h1>
+<style>
+    .error { color: red; }
+</style>
+<form action="/newpost" method='post'>
+    <label>
+        Title for your new blog:
+        <input type="text" name='title_blog'/>
+    </label>
+    <p class="error" style="display:inline-block;">{{title_error}}</p>
+    
+
+    <label>
+        Your new blog:
+        <input type="text" name='blog' />
+    </label>
+    <p class="error" style="display:inline-block;">{{blog_error}}</p>
+    <input type="submit" value='Add Entry' />
