@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            .error { color: red; }
+        </style>
+    </head>
+    <body>
+        <h1>Login</h1>
+        
+            
+            <form action="/login" method="post">
+                <label for='username'>
+                    Username  <input id='username' type="text" name="username" value='{{username}}'/>{{username_error}}
+                <label/>
+                <p class="error"></p>
+            
+            
+            
+        
+                <label for='password'>
+                    Password  <input id='password' type="password" name="password" value='{{password}}'/>{{password_error}}
+                <label/>
+                <p class="error"></p>
+            
+            
+              
+           
+            
+            
+            
+                <br>
+                <input type="submit" name='submit' value="Submit"/>
+            </form>
+            <p class="signup-text">Create Account<a href="/signup">Create Account</a></p>
+            
+    </body>
+            
+</html>

@@ -1,4 +1,7 @@
-<h1>Build a Blog</h1>
+{% extends "base.html" %}
+{% block content %}
+    
+<h1>New Post</h1>
 <style>
     .error { color: red; }
 </style>
@@ -16,3 +19,5 @@
     </label>
     <p class="error" style="display:inline-block;">{{blog_error}}</p>
     <input type="submit" value='Add Entry' />
+
+    {% endblock %}

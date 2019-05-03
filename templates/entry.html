@@ -13,9 +13,10 @@
 
         <ul>
             
-            <a href="/entry?id={{blogs.id}}"><li>{{blogs.title}}</a>   
+            <a href="/entry?id={{blog.id}}"><li>{{blog.title}}</a>   
             </li>
-            <li> {{blogs.body}}</li>
+            <li> {{blog.body}}</li>
+            <h6> writtin by: <a href="/blog?user={{user.id}}">{{user.username}}</a></h6>
             
             
         </ul>
