@@ -84,7 +84,7 @@ def new_post():
             db.session.commit()
             x= new_entry.id
             #return redirect('/entry?id={}'.format(x))
-            return render_template('entry.html', blogs=new_entry)
+            return render_template('entry.html', blog=new_entry, user=x)
         else:    
         #blogs = Blog.query.all()
             pass
